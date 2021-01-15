@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrincipal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrincipal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/subtitle"
+            android:padding="19dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeInformations"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/canto_arredondado">
+
+        <LinearLayout
+            android:id="@+id/botao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/buttonFeminino"
+                android:layout_width="120dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/buttonMasculino"
+                android:background="@drawable/cantos_esquerdos_arredondados"
+                android:text="@string/masculino"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonMasculino"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cantos_direitos_arredondados"
+                android:gravity="center"
+                android:text="@string/feminino"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPeso"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_fitness_center_24"
+            android:drawableTint="@color/colorPrincipal"
+            android:drawablePadding="20dp"
+            android:hint="@string/peso"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/botao"
+            android:inputType="numberDecimal"
+            android:drawableLeft="@drawable/ic_baseline_fitness_center_24" />
+
+        <EditText
+            android:id="@+id/editAltura"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_arrow_upward_24"
+            android:drawableTint="@color/colorPrincipal"
+            android:drawablePadding="20dp"
+            android:hint="@string/altura"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editPeso"
+            android:inputType="numberDecimal"
+            android:drawableLeft="@drawable/ic_baseline_arrow_upward_24" />
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/todos_cantos_arredondados"
+            android:gravity="center_horizontal"
+            android:paddingTop="14dp"
+            android:layout_below="@+id/editAltura"
+            android:text="@string/calcular"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

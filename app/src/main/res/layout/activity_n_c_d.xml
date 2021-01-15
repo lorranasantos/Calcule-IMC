@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrincipal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:text="@string/title"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/subtitle"
+                android:padding="19dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeInformations"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/canto_arredondado">
+
+            <LinearLayout
+                android:id="@+id/botao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonFeminino"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/buttonMasculino"
+                    android:background="@drawable/cantos_esquerdos_arredondados"
+                    android:text="@string/masculino"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttonMasculino"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cantos_direitos_arredondados"
+                    android:gravity="center"
+                    android:text="@string/feminino"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editPeso"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/botao"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_baseline_fitness_center_24"
+                android:drawableLeft="@drawable/ic_baseline_fitness_center_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorPrincipal"
+                android:hint="@string/peso"
+                android:inputType="numberDecimal" />
+
+
+
+            <TextView
+                android:id="@+id/viewIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPeso"
+                android:text="Qual é a sua Idade" />
+
+            <Spinner
+                android:id="@+id/spinneridade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/idades" />
+
+            <TextView
+                android:id="@+id/viewAtividade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewIdade"
+                android:text="Qual é seu nível de atividades Físicas" />
+
+            <Spinner
+                android:id="@+id/spinnerAtividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/niveis_atividade" />
+
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewAtividade"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/todos_cantos_arredondados"
+                android:gravity="center_horizontal"
+                android:paddingTop="14dp"
+                android:text="@string/calcular" />
+
+        </RelativeLayout>
+    </ScrollView>
+

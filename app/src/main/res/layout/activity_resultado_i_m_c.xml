@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoIMC"
+    android:orientation="vertical"
+    android:background="@color/colorPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/cantos_inferiores_arredondados"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloResultado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/resultado"
+            android:textSize="20sp"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorPrincipal"/>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tituloResultado"
+            android:shadowColor="@color/colorPrincipal"
+            android:background="@drawable/redondo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="seu peso e"
+                android:gravity="bottom"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewFrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrincipal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:layout_centerHorizontal="true"
+            android:text="@string/desenvolvedor"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

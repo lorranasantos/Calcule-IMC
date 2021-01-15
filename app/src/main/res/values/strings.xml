@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Calcule seu IMC</string>
+    <string name="title">Calcule seu IMC</string>
+    <string name="subtitle">O IMC (Índice de Massa Corporal) é um calculo que serve para avaliar se a pessoa está dentro do peso ideal. </string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="peso">Digite o seu peso:</string>
+    <string name="altura">Digite a sua altura:</string>
+    <string name="calcular">Calcular IMC</string>
+    <string name="resultado">Resultado</string>
+    <string name="desenvolvedor">Desenvolvido por DS2T-2020</string>
+    <string name="idade">Idade</string>
+    <string name="calculoNCD">Calcule seu NCD</string>
+    <string name="texto_ncd">NCD é a quantidade de calorias que uma pessoa deve consumir para mante-la viva</string>
+
+    <string-array name="estados">
+        <item>São Paulo</item>
+        <item>Minas Gerais</item>
+        <item>ES</item>
+    </string-array>
+
+    <string-array name="idades">
+        <item>Entre 18 a 30 anos</item>
+        <item>Entre 31 a 60 anos</item>
+        <item>Acima de 60</item>
+    </string-array>
+
+    <string-array name="niveis_atividade">
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Intenso</item>
+    </string-array>
+</resources>
