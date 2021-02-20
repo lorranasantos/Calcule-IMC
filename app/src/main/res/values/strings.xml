@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calcule seu IMC</string>
+    <string name="app_name">Health Care</string>
     <string name="title">Calcule seu IMC</string>
     <string name="subtitle">O IMC (Índice de Massa Corporal) é um calculo que serve para avaliar se a pessoa está dentro do peso ideal. </string>
     <string name="feminino">Feminino</string>

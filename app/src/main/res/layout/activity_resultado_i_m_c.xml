@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultadoIMC"
+    tools:context=".gui.ResultadoIMC"
     android:orientation="vertical"
     android:background="@color/colorPrincipal">
 
@@ -21,9 +21,8 @@
             android:background="@color/white"
             android:gravity="center_horizontal"
             android:text="@string/resultado"
-            android:textSize="20sp"
-            android:paddingTop="15dp"
-            android:textColor="@color/colorPrincipal"/>
+            android:textAppearance="@style/titulo"
+            android:paddingTop="15dp"/>
 
         <LinearLayout
             android:layout_width="120dp"
@@ -36,25 +35,30 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView_resultado"
+                android:id="@+id/text_view_resultado"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text=""
-                android:gravity="center"/>
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/subtitulo"/>
 
             <TextView
-                android:id="@+id/textViewStatus"
+                android:id="@+id/text_view_status"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="seu peso e"
-                android:gravity="bottom"/>
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/subtitulo"/>
 
 
         </LinearLayout>
         <TextView
-            android:id="@+id/textViewFrase"
+            android:id="@+id/text_view_frase"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/motivationalText"/>
     </LinearLayout>
 
     <RelativeLayout

@@ -2,10 +2,10 @@
 <ripple android:color="@color/buttonColor"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/esquerdoArredondado">
+    <item android:id="@+id/direitoArredondado">
         <shape android:shape="rectangle">
-            <solid android:color="@color/colorPrimary"/>
-            <corners android:topLeftRadius="15dp" android:bottomLeftRadius="15dp"/>
+            <solid android:color="@color/colorPrimaryDark"/>
+            <corners android:topRightRadius="15dp" android:bottomRightRadius="15dp"/>
         </shape>
     </item>
 </ripple>

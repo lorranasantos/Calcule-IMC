@@ -15,13 +15,14 @@ fun calcularIMC (peso: Double, altura: Double): Array<String > {
 }
 
 fun obterFrase(status: String ): String  {
+    var tamanho = 0
 
     if (status == "Peso Ideal"){
-        val tamanho = frases.frasesIdeal.size
+         tamanho = frases.frasesIdeal.size
         return frases.frasesIdeal[java.util.Random().nextInt(tamanho)]
     }
     else{
-        val tamanho = frases.frasesNaoIdeal.size
+         tamanho = frases.frasesNaoIdeal.size
         return frases.frasesNaoIdeal[java.util.Random().nextInt(tamanho)]
     }
 
@@ -36,7 +37,7 @@ fun formatarDouble(valor: Double): String{
 
     fun obterStatus(imc: Double): String  {
 
-        if(imc <= 18.5){
+        if(imc < 18.5){
             return "Abaixo do Peso"
         }
         else if (imc >= 18.5 && imc < 25){

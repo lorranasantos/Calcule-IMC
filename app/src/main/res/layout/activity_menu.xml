@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity"
+    tools:context=".gui.MenuActivity"
     android:background="@color/colorPrincipal">
 
     <TextView
         android:id="@+id/text_view_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Saúde Calc"
+        android:text="Health Care"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="10dp"
         android:textAppearance="@style/titulo"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:textAppearance="@style/subtitulo"
-        android:text="Qualidade de vida para você e sua família"
+        android:text="Um auxílio para a sua saúde"
         app:layout_constraintTop_toBottomOf="@+id/text_view_titulo"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -38,7 +38,7 @@
             android:padding="8dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/ncd"
+                android:id="@+id/card_ncd"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
